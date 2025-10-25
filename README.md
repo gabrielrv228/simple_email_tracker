@@ -14,7 +14,7 @@ This repo includes Terraform to provision the Lambda, an example HTML snippet to
 	- `requirements.txt` - Python dependencies installed into the Lambda package.
 - `html.html` - Example tracking-pixel HTML snippet to embed in messages.
 - `setup/aws_setup.sh` - Helper script to create some AWS resources (S3 bucket, IAM role/policy) used by CI/workflows or local setup.
-- `.github/workflows/deploy.yaml` - GitHub Action workflow to run Terraform using OIDC/assumed role.
+- `.github/workflows/deploy.yaml` - GitHub Actions workflow to run Terraform using OIDC/assumed role.
 
 ## How it works (high level)
 

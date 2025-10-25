@@ -105,3 +105,17 @@ You can add the info and the Lambda will include the text in the Telegram notifi
 - The handler returns a JSON response with `isBase64Encoded: true` and the `pixel_img` base64 body so AWS returns a valid image.
 
 
+## Usage
+
+1. Fork this repository to your GitHub account.
+
+2. Clone your fork locally.
+
+3. Edit the aws_setup.sh script and update the variable values with your own.
+
+4. Authenticate with AWS and run the script to create the necessary resources.
+
+5. Set the required variables in GitHub Actions → Repository → Settings → Variables (no secrets needed).
+
+6. Trigger the GitHub Actions workflow to deploy or destroy the application.
+If everything works correctly, you’ll receive a Telegram message containing the Lambda function URL.

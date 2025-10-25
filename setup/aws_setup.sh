@@ -7,15 +7,15 @@ set -euo pipefail
 
 #AWS
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query 'Account' --output text)
-BUCKET_NAME="my-unique-bucket-123456789012"
-BUCKET_REGION="us-east-1"
+BUCKET_NAME=""
+BUCKET_REGION=""
 ROLE_NAME="AccessRole"
 POLICY_NAME="AccessPolicy"
 
 #GitHub
-USERNAME_OR_ORGANIZATION="gabrielrv228"
-REPOSITORY_NAME="email_tracker"
-BRANCH_NAME="master"
+USERNAME_OR_ORGANIZATION=""
+REPOSITORY_NAME=""
+BRANCH_NAME=""
 
 ACTION="${1:-}" # usage: ./aws_setup.sh [create|destroy]
 

@@ -75,7 +75,6 @@ AWS_PROFILE=your-admin-profile ./setup/aws_setup.sh create
 Set those values in the repository (or organization) Settings → Secrets and variables → Actions → Variables (or Secrets for sensitive values). The workflow reads them and passes them to `terraform` via `TF_VAR_*` environment variables.
 
 Security reminder: because the script creates IAM roles and policies that grant broad permissions, run it only from a trusted, secure environment and rotate any credentials/roles you create according to your security policies.
-```
 
 ## Deployment (GitHub Actions only)
 
